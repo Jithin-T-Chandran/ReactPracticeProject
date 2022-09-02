@@ -40,7 +40,7 @@ function AddUser(props) {
   }
 
   return (
-    <div>
+    <React.Component>
       {error && <ErrorModel title={error.title} message={error.message} onConfirm={errorHandler}/>}
       <Card className={classes.input}>
         <form onSubmit={addUserHandler}>
@@ -61,7 +61,7 @@ function AddUser(props) {
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-    </div>
+    </React.Component>
   );
 }
 

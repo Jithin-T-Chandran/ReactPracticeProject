@@ -13,10 +13,10 @@ function App() {
   }
 
   return (
-    <div>
+    <React.Component>
         <AddUser onAddUser={addUserHandler}/>
         <UsersList users={userList}/>
-    </div>
+    </React.Component>
   );
 }
 
